@@ -10,6 +10,20 @@
     "sourceMap": true,
     "outDir": "./dist",
     "baseUrl": "./",
+    "paths": {
+      "src/*": [
+        "src/*"
+      ],
+      "entities/*": [
+        "src/entities/*"
+      ],
+      "services/*": [
+        "src/services/*"
+      ],
+      "controller/*": [
+        "src/controller/*"
+      ],
+    },
     "incremental": true,
     "skipLibCheck": true,
     "strictNullChecks": false,
