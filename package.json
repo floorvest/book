@@ -14,22 +14,35 @@
     "start:prod": "node dist/main",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "test": "jest",
+    "seed": "node dist/seeder",
+    "seed:refresh": "node dist/seeder --refresh",
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "jest --config ./test/jest-e2e.json"
+    "test:e2e": "jest --config ./test/jest-e2e.json",
+    "algo:test1": "node algoritma/test1.js",
+    "algo:test2": "node algoritma/test2.js",
+    "algo:test3": "node algoritma/test3.js",
+    "algo:test4": "node algoritma/test4.js"
   },
   "dependencies": {
+    "@faker-js/faker": "^8.4.1",
     "@nestjs/common": "^10.0.0",
+    "@nestjs/config": "^3.2.3",
     "@nestjs/core": "^10.0.0",
     "@nestjs/platform-express": "^10.0.0",
+    "@nestjs/swagger": "^7.4.0",
+    "@nestjs/typeorm": "^10.0.2",
+    "mysql2": "^3.11.0",
+    "nestjs-seeder": "^0.3.2",
     "reflect-metadata": "^0.2.0",
-    "rxjs": "^7.8.1"
+    "rxjs": "^7.8.1",
+    "typeorm": "^0.3.20"
   },
   "devDependencies": {
     "@nestjs/cli": "^10.0.0",
     "@nestjs/schematics": "^10.0.0",
-    "@nestjs/testing": "^10.0.0",
+    "@nestjs/testing": "^10.3.10",
     "@types/express": "^4.17.17",
     "@types/jest": "^29.5.2",
     "@types/node": "^20.3.1",
